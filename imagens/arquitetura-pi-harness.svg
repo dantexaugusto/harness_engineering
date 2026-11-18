@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0D9488"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F7F9"/>
+
+  <!-- Header -->
+  <text x="640" y="54" text-anchor="middle" font-size="32" font-weight="800" fill="#0F172A">Raio-X do Pi: Anatomia de um Harness Minimalista</text>
+  <text x="640" y="84" text-anchor="middle" font-size="17" font-weight="500" fill="#475569">Arquitetura em camadas (pi-mono) — transparência total e zero vendor lock-in</text>
+
+  <!-- LEFT COLUMN: LAYERED ARCHITECTURE -->
+  <text x="56" y="128" font-size="15" font-weight="700" fill="#0F172A" letter-spacing="0.06em">1. ARQUITETURA EM CAMADAS</text>
+
+  <!-- Layer 1: Surface & Extensibility (Top) -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="144" width="690" height="122" rx="14" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2.5"/>
+    <rect x="56" y="144" width="12" height="122" rx="6" fill="#0EA5E9"/>
+    <text x="86" y="176" font-size="19" font-weight="700" fill="#0369A1">Superfícies &amp; Extensibilidade (Opt-in)</text>
+    <text x="86" y="201" font-size="14" fill="#334155">Como o humano e o projeto interagem com o agente:</text>
+    <!-- Pills -->
+    <rect x="86" y="218" width="96" height="32" rx="8" fill="#E0F2FE"/>
+    <text x="134" y="239" text-anchor="middle" font-size="13" font-weight="600" fill="#0369A1">TUI (CLI)</text>
+
+    <rect x="192" y="218" width="110" height="32" rx="8" fill="#E0F2FE"/>
+    <text x="247" y="239" text-anchor="middle" font-size="13" font-weight="600" fill="#0369A1">Print / JSON</text>
+
+    <rect x="312" y="218" width="96" height="32" rx="8" fill="#E0F2FE"/>
+    <text x="360" y="239" text-anchor="middle" font-size="13" font-weight="600" fill="#0369A1">RPC / SDK</text>
+
+    <rect x="418" y="218" width="124" height="32" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="480" y="239" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">AGENTS.md</text>
+
+    <rect x="552" y="218" width="174" height="32" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="639" y="239" text-anchor="middle" font-size="13" font-weight="600" fill="#334155">Skills &amp; Extensões TS</text>
+  </g>
+
+  <!-- Connector 1 -> 2 -->
+  <line x1="401" y1="266" x2="401" y2="294" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow-slate)"/>
+
+  <!-- Layer 2: pi-agent-core & 4 Core Tools (Middle) -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="298" width="690" height="214" rx="14" fill="#FFFFFF" stroke="#0D9488" stroke-width="2.5"/>
+    <rect x="56" y="298" width="12" height="214" rx="6" fill="#0D9488"/>
+    <text x="86" y="330" font-size="19" font-weight="700" fill="#0F766E">pi-agent-core — O Núcleo do Harness</text>
+
+    <!-- Badge < 1000 tokens -->
+    <rect x="492" y="310" width="234" height="28" rx="14" fill="#CCFBF1"/>
+    <text x="609" y="329" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0F766E">System Prompt &lt; 1.000 tokens</text>
+
+    <text x="86" y="356" font-size="14" fill="#334155">Gerencia estado da sessão, loop de execução e compactação automática de contexto.</text>
+
+    <!-- Sub-box: 4 Core Tools -->
+    <rect x="86" y="374" width="640" height="120" rx="10" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.5"/>
+    <text x="104" y="398" font-size="13.5" font-weight="700" fill="#0F766E" letter-spacing="0.04em">AS 4 FERRAMENTAS NATIVAS DO NÚCLEO</text>
+
+    <!-- Tool 1: read -->
+    <rect x="104" y="412" width="140" height="66" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="174" y="438" text-anchor="middle" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace" fill="#0F172A">read</text>
+    <text x="174" y="460" text-anchor="middle" font-size="12.5" fill="#475569">Lê arquivos</text>
+
+    <!-- Tool 2: write -->
+    <rect x="258" y="412" width="140" height="66" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="328" y="438" text-anchor="middle" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace" fill="#0F172A">write</text>
+    <text x="328" y="460" text-anchor="middle" font-size="12.5" fill="#475569">Cria arquivos</text>
+
+    <!-- Tool 3: edit -->
+    <rect x="412" y="412" width="140" height="66" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="482" y="438" text-anchor="middle" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace" fill="#0F172A">edit</text>
+    <text x="482" y="460" text-anchor="middle" font-size="12.5" fill="#475569">Edição cirúrgica</text>
+
+    <!-- Tool 4: bash -->
+    <rect x="566" y="412" width="140" height="66" rx="8" fill="#FFFFFF" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="636" y="438" text-anchor="middle" font-size="16" font-weight="800" font-family="'JetBrains Mono', monospace" fill="#0F172A">bash</text>
+    <text x="636" y="460" text-anchor="middle" font-size="12.5" fill="#475569">Shell, git &amp; testes</text>
+  </g>
+
+  <!-- Connector 2 -> 3 -->
+  <line x1="401" y1="512" x2="401" y2="540" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow-slate)"/>
+
+  <!-- Layer 3: pi-ai (Bottom - Engine Mount) -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="544" width="690" height="128" rx="14" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2.5"/>
+    <rect x="56" y="544" width="12" height="128" rx="6" fill="#F59E0B"/>
+    <text x="86" y="576" font-size="19" font-weight="700" fill="#B45309">pi-ai — Camada Agnóstica de Modelos ("Suporte do Motor")</text>
+    <text x="86" y="601" font-size="14" fill="#334155">Normaliza 4 protocolos padrão para trocar de modelo sem alterar o harness (/model):</text>
+
+    <rect x="86" y="618" width="290" height="36" rx="8" fill="#FEF3C7"/>
+    <text x="231" y="641" text-anchor="middle" font-size="13.5" font-weight="600" fill="#92400E">APIs Nuvem: OpenAI, Anthropic, Google</text>
+
+    <rect x="390" y="618" width="336" height="36" rx="8" fill="#FEF3C7"/>
+    <text x="558" y="641" text-anchor="middle" font-size="13.5" font-weight="600" fill="#92400E">Locais / Open-Weight: Ollama, llama.cpp</text>
+  </g>
+
+  <!-- RIGHT COLUMN: AGENTIC LOOP -->
+  <text x="786" y="128" font-size="15" font-weight="700" fill="#0F172A" letter-spacing="0.06em">2. O LOOP AGÊNTICO EM AÇÃO</text>
+
+  <g filter="url(#shadow)">
+    <rect x="786" y="144" width="438" height="528" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+
+    <!-- Step 1 -->
+    <rect x="818" y="172" width="374" height="72" rx="10" fill="#F8FAFC" stroke="#94A3B8" stroke-width="1.5"/>
+    <circle cx="848" cy="208" r="15" fill="#0F172A"/>
+    <text x="848" y="213" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="876" y="202" font-size="15.5" font-weight="700" fill="#0F172A">Prompt + Contexto Enxuto</text>
+    <text x="876" y="224" font-size="13" fill="#475569">Objetivo do usuário + AGENTS.md + histórico</text>
+
+    <line x1="1005" y1="244" x2="1005" y2="270" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+    <!-- Step 2 -->
+    <rect x="818" y="274" width="374" height="72" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="848" cy="310" r="15" fill="#F59E0B"/>
+    <text x="848" y="315" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="876" y="304" font-size="15.5" font-weight="700" fill="#92400E">Modelo Raciocina (via pi-ai)</text>
+    <text x="876" y="326" font-size="13" fill="#78350F">Decide a próxima ação ou pede uma ferramenta</text>
+
+    <line x1="1005" y1="346" x2="1005" y2="372" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+    <!-- Step 3 -->
+    <rect x="818" y="376" width="374" height="72" rx="10" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
+    <circle cx="848" cy="412" r="15" fill="#0D9488"/>
+    <text x="848" y="417" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="876" y="406" font-size="15.5" font-weight="700" fill="#0F766E">Executa Ferramenta no Ambiente</text>
+    <text x="876" y="428" font-size="13" fill="#115E59">read / write / edit / bash no projeto real</text>
+
+    <line x1="1005" y1="448" x2="1005" y2="474" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+    <!-- Step 4 -->
+    <rect x="818" y="478" width="374" height="72" rx="10" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.5"/>
+    <circle cx="848" cy="514" r="15" fill="#0EA5E9"/>
+    <text x="848" y="519" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="876" y="508" font-size="15.5" font-weight="700" fill="#0369A1">Observa Saída Real &amp; Ajusta</text>
+    <text x="876" y="530" font-size="13" fill="#075985">Lê erros de teste, diff ou stdout e itera até validar</text>
+
+    <!-- Loop back arrow on right side -->
+    <path d="M 1192 514 L 1208 514 L 1208 310 L 1194 310" fill="none" stroke="#0D9488" stroke-width="2.5" stroke-dasharray="5,4" marker-end="url(#arrow-teal)"/>
+
+    <!-- Bottom takeaway box -->
+    <rect x="818" y="572" width="374" height="78" rx="10" fill="#0F172A"/>
+    <text x="836" y="598" font-size="13.5" font-weight="700" fill="#5EEAD4">Por que apenas 4 ferramentas?</text>
+    <text x="836" y="619" font-size="12.5" fill="#E2E8F0">Com bash + arquivos, o agente já compõe git, rg,</text>
+    <text x="836" y="636" font-size="12.5" fill="#E2E8F0">testes e linters sem poluir a janela de contexto.</text>
+  </g>
+</svg>

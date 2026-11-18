@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0D9488"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0EA5E9"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#F59E0B"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#EF4444"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F7F9"/>
+
+  <!-- Header -->
+  <text x="640" y="52" text-anchor="middle" font-size="31" font-weight="800" fill="#0F172A">Do Núcleo Mínimo ao Harness de Produção</text>
+  <text x="640" y="82" text-anchor="middle" font-size="16.5" font-weight="500" fill="#475569">Como o Pi equipa o mesmo motor para enfrentar terrenos complexos (off-road) sem engessar o núcleo</text>
+
+  <!-- CENTER HUB: PI CORE -->
+  <g filter="url(#shadow)">
+    <rect x="470" y="266" width="340" height="176" rx="18" fill="#0F172A" stroke="#0D9488" stroke-width="3"/>
+    <text x="640" y="304" text-anchor="middle" font-size="13" font-weight="700" fill="#5EEAD4" letter-spacing="0.08em">NÚCLEO ENXUTO DO PI</text>
+    <text x="640" y="334" text-anchor="middle" font-size="22" font-weight="800" fill="#FFFFFF">pi-agent-core + pi-ai</text>
+    <text x="640" y="360" text-anchor="middle" font-size="13.5" fill="#CBD5E1">System Prompt &lt; 1.000 tokens</text>
+
+    <!-- 4 core tool pills inside hub -->
+    <rect x="498" y="382" width="64" height="32" rx="7" fill="#1E293B" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="530" y="403" text-anchor="middle" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#5EEAD4">read</text>
+
+    <rect x="570" y="382" width="66" height="32" rx="7" fill="#1E293B" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="603" y="403" text-anchor="middle" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#5EEAD4">write</text>
+
+    <rect x="644" y="382" width="64" height="32" rx="7" fill="#1E293B" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="676" y="403" text-anchor="middle" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#5EEAD4">edit</text>
+
+    <rect x="716" y="382" width="66" height="32" rx="7" fill="#1E293B" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="749" y="403" text-anchor="middle" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#5EEAD4">bash</text>
+  </g>
+
+  <!-- CARD 1: TOP LEFT — CONTEXT ENGINEERING -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="122" width="366" height="202" rx="14" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2.5"/>
+    <rect x="56" y="122" width="366" height="40" rx="14" fill="#0EA5E9"/>
+    <rect x="56" y="146" width="366" height="16" fill="#0EA5E9"/>
+    <text x="76" y="149" font-size="15.5" font-weight="700" fill="#FFFFFF">1. Engenharia de Contexto ("Mapa")</text>
+
+    <text x="76" y="190" font-size="14" font-weight="700" fill="#0369A1">AGENTS.md &amp; SYSTEM.md</text>
+    <text x="76" y="211" font-size="13" fill="#334155">Regras do repositório, stack, arquitetura e</text>
+    <text x="76" y="228" font-size="13" fill="#334155">comandos oficiais de build/teste na raiz.</text>
+
+    <text x="76" y="260" font-size="14" font-weight="700" fill="#0369A1">Skills &amp; Templates Sob Demanda</text>
+    <text x="76" y="281" font-size="13" fill="#334155">Guias especializados carregados só quando</text>
+    <text x="76" y="298" font-size="13" fill="#334155">a tarefa pede — sem poluir a janela.</text>
+  </g>
+  <path d="M 422 252 L 464 294" stroke="#0EA5E9" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- CARD 2: TOP RIGHT — EXTENSIBILITY (TS) -->
+  <g filter="url(#shadow)">
+    <rect x="858" y="122" width="366" height="202" rx="14" fill="#FFFFFF" stroke="#0D9488" stroke-width="2.5"/>
+    <rect x="858" y="122" width="366" height="40" rx="14" fill="#0D9488"/>
+    <rect x="858" y="146" width="366" height="16" fill="#0D9488"/>
+    <text x="878" y="149" font-size="15.5" font-weight="700" fill="#FFFFFF">2. Extensões TypeScript ("Acessórios")</text>
+
+    <text x="878" y="190" font-size="14" font-weight="700" fill="#0F766E">pi.registerTool() &amp; Comandos /</text>
+    <text x="878" y="211" font-size="13" fill="#334155">Adiciona busca web, acesso a bancos, APIs</text>
+    <text x="878" y="228" font-size="13" fill="#334155">internas e perguntas ricas na interface TUI.</text>
+
+    <text x="878" y="260" font-size="14" font-weight="700" fill="#0F766E">Subagentes &amp; Fluxos Customizados</text>
+    <text x="878" y="281" font-size="13" fill="#334155">Padrões Planejador → Gerador → Avaliador</text>
+    <text x="878" y="298" font-size="13" fill="#334155">acoplados apenas em projetos complexos.</text>
+  </g>
+  <path d="M 858 252 L 816 294" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+  <!-- CARD 3: BOTTOM LEFT — GUARDRAILS & SAFETY -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="384" width="366" height="202" rx="14" fill="#FFFFFF" stroke="#EF4444" stroke-width="2.5"/>
+    <rect x="56" y="384" width="366" height="40" rx="14" fill="#DC2626"/>
+    <rect x="56" y="408" width="366" height="16" fill="#DC2626"/>
+    <text x="76" y="411" font-size="15.5" font-weight="700" fill="#FFFFFF">3. Guardrails &amp; Freios ("Segurança")</text>
+
+    <text x="76" y="452" font-size="14" font-weight="700" fill="#B91C1C">Interceptação de Eventos (Hooks)</text>
+    <text x="76" y="473" font-size="13" fill="#334155">Bloqueia edição em .env, impede comandos</text>
+    <text x="76" y="490" font-size="13" fill="#334155">destrutivos (rm -rf) e valida permissões.</text>
+
+    <text x="76" y="522" font-size="14" font-weight="700" fill="#B91C1C">Human-in-the-Loop &amp; Checkpoints</text>
+    <text x="76" y="543" font-size="13" fill="#334155">Aprovação humana antes de ações críticas</text>
+    <text x="76" y="560" font-size="13" fill="#334155">e estado persistido com git / appendEntry().</text>
+  </g>
+  <path d="M 422 456 L 464 414" stroke="#EF4444" stroke-width="2.5" marker-end="url(#arrow-red)"/>
+
+  <!-- CARD 4: BOTTOM RIGHT — OBJECTIVE SENSORS -->
+  <g filter="url(#shadow)">
+    <rect x="858" y="384" width="366" height="202" rx="14" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2.5"/>
+    <rect x="858" y="384" width="366" height="40" rx="14" fill="#D97706"/>
+    <rect x="858" y="408" width="366" height="16" fill="#D97706"/>
+    <text x="878" y="411" font-size="15.5" font-weight="700" fill="#FFFFFF">4. Sensores Objetivos ("Painel")</text>
+
+    <text x="878" y="452" font-size="14" font-weight="700" fill="#B45309">Testes, Tipos &amp; Linters (Pass / Fail)</text>
+    <text x="878" y="473" font-size="13" fill="#334155">Substituem o "achismo" do modelo por sinal</text>
+    <text x="878" y="490" font-size="13" fill="#334155">determinístico de erro ou sucesso real.</text>
+
+    <text x="878" y="522" font-size="14" font-weight="700" fill="#B45309">Feedback que Guia a Correção</text>
+    <text x="878" y="543" font-size="13" fill="#334155">Mensagens de erro claras no terminal</text>
+    <text x="878" y="560" font-size="13" fill="#334155">ensinam o agente a corrigir sem intervenção.</text>
+  </g>
+  <path d="M 858 456 L 816 414" stroke="#F59E0B" stroke-width="2.5" marker-end="url(#arrow-amber)"/>
+
+  <!-- BOTTOM BANNER: PI PACKAGES -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="612" width="1168" height="72" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="76" y="628" width="150" height="40" rx="8" fill="#0F172A"/>
+    <text x="151" y="653" text-anchor="middle" font-size="14" font-weight="700" fill="#5EEAD4">Pi Packages</text>
+
+    <text x="248" y="644" font-size="15" font-weight="700" fill="#0F172A">Padronização para o Time Inteiro (Local ou Compartilhado)</text>
+    <text x="248" y="666" font-size="13.5" fill="#475569">Carregue extensões de .pi/extensions/ (por projeto), ~/.pi/agent/extensions/ (global) ou distribua como pacotes via Git / npm.</text>
+  </g>
+</svg>

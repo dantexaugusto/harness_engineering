@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0D9488"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0EA5E9"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F6F7F9"/>
+
+  <!-- Header -->
+  <text x="640" y="48" text-anchor="middle" font-size="30" font-weight="800" fill="#0F172A">Caso Prático: pi-father-spinner (Harness Real sobre Pi)</text>
+  <text x="640" y="76" text-anchor="middle" font-size="16" font-weight="500" fill="#475569">1 Projeto = 1 Bot no Telegram = 1 Sessão tmux = 1 Contexto Isolado</text>
+
+  <!-- COLUMN 1: TELEGRAM USER -->
+  <g filter="url(#shadow)">
+    <rect x="48" y="114" width="212" height="478" rx="14" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="2.5"/>
+    <rect x="48" y="114" width="212" height="42" rx="14" fill="#0EA5E9"/>
+    <rect x="48" y="140" width="212" height="16" fill="#0EA5E9"/>
+    <text x="154" y="142" text-anchor="middle" font-size="15.5" font-weight="700" fill="#FFFFFF">Telegram (Você)</text>
+
+    <!-- Master Bot Box -->
+    <rect x="66" y="182" width="176" height="132" rx="10" fill="#F0F9FF" stroke="#7DD3FC" stroke-width="1.5"/>
+    <text x="154" y="208" text-anchor="middle" font-size="14" font-weight="700" fill="#0369A1">Bot Mestre (Pai)</text>
+    <text x="154" y="232" text-anchor="middle" font-size="12.5" fill="#334155">Envia Token +</text>
+    <text x="154" y="250" text-anchor="middle" font-size="12.5" fill="#334155">URL do GitHub</text>
+    <rect x="78" y="268" width="152" height="32" rx="6" fill="#E0F2FE"/>
+    <text x="154" y="289" text-anchor="middle" font-size="12" font-weight="700" fill="#0369A1">/father-spin ...</text>
+
+    <!-- Child Chats Box -->
+    <rect x="66" y="348" width="176" height="218" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="154" y="376" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">Chats Dedicados</text>
+    <text x="154" y="400" text-anchor="middle" font-size="12.5" fill="#475569">Conversa direta com</text>
+    <text x="154" y="418" text-anchor="middle" font-size="12.5" fill="#475569">cada agente filho:</text>
+
+    <rect x="78" y="438" width="152" height="34" rx="8" fill="#CCFBF1"/>
+    <text x="154" y="460" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0F766E">t.me/bot_projeto_a</text>
+
+    <rect x="78" y="484" width="152" height="34" rx="8" fill="#CCFBF1"/>
+    <text x="154" y="506" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0F766E">t.me/bot_projeto_b</text>
+
+    <text x="154" y="546" text-anchor="middle" font-size="11.5" fill="#64748B">/status • /compact • /stop</text>
+  </g>
+
+  <!-- Arrow Telegram -> Pi-Father -->
+  <line x1="260" y1="248" x2="306" y2="248" stroke="#0EA5E9" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+
+  <!-- COLUMN 2: PI-FATHER + STATE -->
+  <g filter="url(#shadow)">
+    <!-- Pi-Father Card -->
+    <rect x="312" y="114" width="372" height="304" rx="14" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5"/>
+    <rect x="312" y="114" width="372" height="42" rx="14" fill="#0F172A"/>
+    <rect x="312" y="140" width="372" height="16" fill="#0F172A"/>
+    <text x="498" y="142" text-anchor="middle" font-size="15.5" font-weight="700" fill="#5EEAD4">Pi-Father (tmux: pi-father)</text>
+
+    <text x="332" y="182" font-size="13.5" font-weight="700" fill="#0F172A">Extensões acopladas ao núcleo do Pi:</text>
+
+    <rect x="332" y="196" width="332" height="40" rx="8" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
+    <text x="346" y="221" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#0F766E">father-spinner.ts</text>
+    <text x="502" y="221" font-size="12.5" fill="#334155">spin, pool, inspect, stop</text>
+
+    <rect x="332" y="244" width="332" height="40" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.5"/>
+    <text x="346" y="269" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#0369A1">telegram.ts</text>
+    <text x="462" y="269" font-size="12.5" fill="#334155">bridge + setMyName + attach</text>
+
+    <rect x="332" y="292" width="332" height="40" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="346" y="317" font-size="13" font-weight="700" font-family="'JetBrains Mono', monospace" fill="#B45309">tavily.ts</text>
+    <text x="442" y="317" font-size="12.5" fill="#334155">tavily_search &amp; extract</text>
+
+    <!-- Guardrails strip inside Pi-Father -->
+    <rect x="332" y="346" width="332" height="54" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="1.5"/>
+    <text x="346" y="368" font-size="12.5" font-weight="700" fill="#B91C1C">Guardrails: AGENTS.md + Auto-Blindagem SO</text>
+    <text x="346" y="388" font-size="12" fill="#7F1D1D">chmod a-w no código do orquestrador em runtime</text>
+  </g>
+
+  <!-- Arrow Pi-Father <-> SQLite -->
+  <line x1="498" y1="418" x2="498" y2="442" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow-slate)"/>
+
+  <!-- SQLite & Pool Card -->
+  <g filter="url(#shadow)">
+    <rect x="312" y="446" width="372" height="146" rx="14" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2.5"/>
+    <text x="332" y="476" font-size="15.5" font-weight="700" fill="#B45309">Persistência Durável &amp; Pool</text>
+    <text x="332" y="502" font-size="13" fill="#334155">• node:sqlite WAL (state.sqlite + audit_log)</text>
+    <text x="332" y="526" font-size="13" fill="#334155">• Pool de tokens @BotFather alocados sob demanda</text>
+    <text x="332" y="550" font-size="13" fill="#334155">• Auto-recovery: reconcilia tmux e retoma com pi -c</text>
+    <text x="332" y="574" font-size="12" font-weight="600" fill="#92400E">Preserva histórico mesmo se a VM reiniciar</text>
+  </g>
+
+  <!-- Arrow Pi-Father -> Child Agents -->
+  <line x1="684" y1="266" x2="734" y2="266" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+  <text x="709" y="254" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F766E">spin</text>
+
+  <!-- COLUMN 3: ISOLATED CHILD AGENTS -->
+  <g filter="url(#shadow)">
+    <rect x="740" y="114" width="492" height="478" rx="14" fill="#FFFFFF" stroke="#0D9488" stroke-width="2.5"/>
+    <rect x="740" y="114" width="492" height="42" rx="14" fill="#0D9488"/>
+    <rect x="740" y="140" width="492" height="16" fill="#0D9488"/>
+    <text x="986" y="142" text-anchor="middle" font-size="15.5" font-weight="700" fill="#FFFFFF">Agentes Filhos Isolados (Spin-Up Atômico)</text>
+
+    <!-- Child A -->
+    <rect x="764" y="176" width="444" height="186" rx="12" fill="#F0FDFA" stroke="#5EEAD4" stroke-width="1.5"/>
+    <text x="784" y="204" font-size="15" font-weight="800" fill="#0F172A">Filho A — tmux: pi-projeto-a</text>
+    <rect x="1038" y="185" width="152" height="26" rx="13" fill="#0F172A"/>
+    <text x="1114" y="202" text-anchor="middle" font-size="11.5" font-weight="700" fill="#5EEAD4">PI_CHILD_AGENT=1</text>
+
+    <text x="784" y="230" font-size="13" fill="#334155">Diretório: ~/projects/projeto-a  •  Bot renomeado (setMyName)</text>
+    <text x="784" y="252" font-size="13" fill="#334155">Sem ferramentas de orquestração (filho enxuto e focado no código)</text>
+
+    <rect x="784" y="270" width="136" height="32" rx="7" fill="#FFFFFF" stroke="#0D9488"/>
+    <text x="852" y="291" text-anchor="middle" font-size="12" font-weight="700" fill="#0F766E">4 Tools Núcleo</text>
+
+    <rect x="930" y="270" width="128" height="32" rx="7" fill="#FFFFFF" stroke="#0EA5E9"/>
+    <text x="994" y="291" text-anchor="middle" font-size="12" font-weight="700" fill="#0369A1">telegram + tavily</text>
+
+    <rect x="1068" y="270" width="122" height="32" rx="7" fill="#FFFFFF" stroke="#64748B"/>
+    <text x="1129" y="291" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Skill: diode</text>
+
+    <text x="784" y="336" font-size="12.5" font-weight="600" fill="#0F766E">✓ Contexto isolado = menos tokens por mensagem e zero mistura</text>
+
+    <!-- Child B -->
+    <rect x="764" y="382" width="444" height="186" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="784" y="410" font-size="15" font-weight="800" fill="#0F172A">Filho B — tmux: pi-projeto-b</text>
+    <rect x="1038" y="391" width="152" height="26" rx="13" fill="#0F172A"/>
+    <text x="1114" y="408" text-anchor="middle" font-size="11.5" font-weight="700" fill="#5EEAD4">PI_CHILD_AGENT=1</text>
+
+    <text x="784" y="436" font-size="13" fill="#334155">Diretório: ~/projects/projeto-b  •  Repositório clonado via SSH</text>
+    <text x="784" y="458" font-size="13" fill="#334155">Mesmo núcleo aberto, rodando outro projeto em paralelo</text>
+
+    <rect x="784" y="476" width="136" height="32" rx="7" fill="#FFFFFF" stroke="#0D9488"/>
+    <text x="852" y="497" text-anchor="middle" font-size="12" font-weight="700" fill="#0F766E">4 Tools Núcleo</text>
+
+    <rect x="930" y="476" width="128" height="32" rx="7" fill="#FFFFFF" stroke="#0EA5E9"/>
+    <text x="994" y="497" text-anchor="middle" font-size="12" font-weight="700" fill="#0369A1">telegram + tavily</text>
+
+    <rect x="1068" y="476" width="122" height="32" rx="7" fill="#FFFFFF" stroke="#64748B"/>
+    <text x="1129" y="497" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">Skill: diode</text>
+
+    <text x="784" y="542" font-size="12.5" font-weight="600" fill="#475569">✓ Exposição local HTTPS via Diode CLI quando necessário</text>
+  </g>
+
+  <!-- BOTTOM BANNER: INFRA & ANTI-LOCK-IN -->
+  <g filter="url(#shadow)">
+    <rect x="48" y="614" width="1184" height="74" rx="12" fill="#0F172A"/>
+    <text x="72" y="644" font-size="14.5" font-weight="700" fill="#5EEAD4">Infraestrutura Reproduzível &amp; Anti-Lock-in (MIT Open Source)</text>
+    <text x="72" y="668" font-size="13.5" fill="#E2E8F0">Terraform + Ansible (AWS Lightsail + systemd)  •  Modelos trocáveis via pi-ai (ex.: DeepSeek / Kimi / locais)  •  Testes com node:test</text>
+  </g>
+</svg>
