@@ -53,7 +53,7 @@ Um dos maiores erros ao usar IA para código é deixar o agente apenas "olhar" o
 
 ## 5. O Efeito Escher: O Harness que Se Auto-Estende e Se Auto-Corrige
 
-![[escher-harness-autoextensao.jpg]]
+![[escher_desenhando.webp|380]] ![[escher-harness-autoextensao.jpg|500]]
 
 Há uma propriedade única quando juntamos **código aberto** com um **agente que lê, edita e testa código** (`read`, `edit`, `bash`):
 
@@ -63,3 +63,7 @@ Há uma propriedade única quando juntamos **código aberto** com um **agente qu
 - **A tensão entre evolução e produção:** A mesma capacidade de **reescrever a si mesmo** que acelera o desenvolvimento do harness precisa de trava em produção — é exatamente por isso que projetos como o `pi-father-spinner` aplicam **`chmod a-w`** no código do orquestrador em runtime.
 
 > **Próximo passo na apresentação:** No [[05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time|Bloco 5]], veremos todas essas peças (extensões TypeScript, *Skills*, `AGENTS.md`, `Pi Packages` e travas reais no sistema operacional) funcionando juntas em um projeto open source real: o **`pi-father-spinner`**.
+
+> [!tip] Dica de Palco — Lembretes do Bloco 4
+> - **Gancho das Mãos de Escher:** Ao mostrar a pintura original ao lado da nossa adaptação, lembre de enfatizar que **por ser código aberto + `read`/`edit`/`bash`**, o Pi lê o próprio código para se **auto-estender** e se **auto-corrigir**.
+> - **Ponte para o Bloco 5:** Crie a tensão dramática antes de mudar de bloco: *"Esse poder de reescrever a si mesmo é incrível quando você desenvolve o harness — mas o que acontece se um agente tentar fazer isso em produção? Já vamos ver como resolver isso na prática com o `pi-father-spinner`."*

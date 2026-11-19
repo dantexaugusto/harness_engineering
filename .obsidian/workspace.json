@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notas/05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time.md",
+                "file": "00 - Mapa de Estudo e Roteiro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time"
+              "title": "00 - Mapa de Estudo e Roteiro"
             }
           },
           {
@@ -41,16 +41,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apresentacao - Slides.md",
+                "file": "notas/01 - Do Chat ao Terminal e os Pioneiros.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apresentacao - Slides"
+              "title": "01 - Do Chat ao Terminal e os Pioneiros"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,6 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Apresentacao - Slides.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -212,7 +212,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,25 +226,67 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "a20101d2b46e015e",
+  "floating": {
+    "id": "ad113ce49733fc64",
+    "type": "floating",
+    "children": [
+      {
+        "id": "3525c6afe01e17ac",
+        "type": "window",
+        "children": [
+          {
+            "id": "47785ee7f6b46eba",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "0e2f7c88f11bc68b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Apresentacao - Slides.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Apresentacao - Slides"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 16,
+        "y": 10,
+        "width": 1024,
+        "height": 767,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "0e2f7c88f11bc68b",
   "lastOpenFiles": [
-    "README.md",
+    "notas/06 - Cola de Palco (Roteiro de Fala).md",
+    "00 - Mapa de Estudo e Roteiro.md",
     "Apresentacao - Slides.md",
+    "imagens/cpu-motor-camada-semantica.jpg",
     "Apresentacao - Visual (Canvas).canvas",
+    "imagens/origem-termo-harness.jpg",
+    "imagens/escher_desenhando.webp",
+    "notas/02 - O que e Harness Engineering e o Raio-X com Pi.md",
+    "notas/01 - Do Chat ao Terminal e os Pioneiros.md",
+    "notas/03 - Anatomia do Harness por Dentro (Raio-X do Pi).md",
+    "notas/05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time.md",
+    "imagens/evolucao-chat-ao-terminal.jpg",
     "imagens/escher-harness-autoextensao.jpg",
-    "imagens/evolucao-motor-ao-automovel.jpg",
     "imagens/caso-pratico-pi-father-spinner.svg",
     "imagens/carro-certo-por-terreno.jpg",
     "imagens/arquitetura-pi-harness.svg",
-    "notas/02 - O que e Harness Engineering e o Raio-X com Pi.md",
-    "00 - Mapa de Estudo e Roteiro.md",
-    "notas/01 - Do Chat ao Terminal e os Pioneiros.md",
-    "notas/05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time.md",
+    "README.md",
+    "imagens/evolucao-motor-ao-automovel.jpg",
     "imagens/metafora-carro-harness.jpg",
     "notas/04 - Extensibilidade, Guardrails e Engenharia de Contexto.md",
-    "imagens/extensibilidade-guardrails-pi.svg",
-    "imagens/evolucao-chat-ao-terminal.jpg",
-    "notas/03 - Anatomia do Harness por Dentro (Raio-X do Pi).md",
     "Bem-vindo.md",
     "imagens",
     "Apresentacao - IA no Terminal e Harness Engineering.canvas",

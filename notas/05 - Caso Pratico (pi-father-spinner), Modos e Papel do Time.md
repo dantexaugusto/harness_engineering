@@ -66,3 +66,10 @@ O papel do time deixa de ser "escrever cada linha de sintaxe manualmente" e pass
 2. **Projetar o terreno e o harness** (testes, contexto, guardrails, ferramentas certas para cada tarefa).
 3. **Escolher o carro certo para a viagem** (eficiência de modelo e complexidade sem desperdício).
 4. **Revisar criticamente o resultado** (arquitetura, segurança e impacto no negócio).
+
+> [!tip] Dica de Palco — Lembretes do Bloco 5
+> - **História que o time misto entende rápido:** Apresente o `pi-father-spinner` como *"gerenciar uma equipe de agentes pelo Telegram, onde cada projeto ganha seu próprio bot, sua própria sessão `tmux` e seu próprio contexto isolado"*.
+> - **Feche o arco dos blocos anteriores:**
+>   - *Eficiência:* `PI_CHILD_AGENT=1` mantém os filhos leves (sem ferramentas de orquestração).
+>   - *Fechando a tensão do Efeito Escher:* `AGENTS.md` pede para não alterar o orquestrador, **mas é o `chmod a-w` via Ansible no sistema operacional que garante a trava real em produção**.
+> - **Mensagem final:** A IA não substitui a engenharia — ela abre uma camada semântica nova onde projetar o ambiente e o harness vale tanto quanto escrever código.

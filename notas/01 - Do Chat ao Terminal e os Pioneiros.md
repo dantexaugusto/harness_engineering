@@ -1,5 +1,19 @@
 # 01 — Do Chat ao Terminal, os Pioneiros e o Anti-Lock-in
 
+## 0. Antes de Tudo: De Onde Vem o Termo "Harness"?
+
+Para quem fala português do Brasil, a palavra *"harness"* não é intuitiva à primeira vista. Em inglês, **harness** significa literalmente **arreio** (usado em cavalos para puxar carroças/arados e responder às rédeas) ou **peitoral** (usado em cães de guia ou tração).
+
+![[origem-termo-harness.jpg]]
+
+A ideia por trás da palavra é a mesma nos três casos:
+- **Sem o arreio/peitoral:** há muita força e energia, mas sem direção, sem acoplamento ao trabalho e sem controle seguro.
+- **Com o *harness*:** você **canaliza força bruta em trabalho útil, guiado e seguro**.
+
+É daí que vem **Harness Engineering**: construir toda a estrutura ao redor de um modelo de IA para transformar capacidade bruta de linguagem em engenharia de código confiável.
+
+---
+
 ![[evolucao-chat-ao-terminal.jpg]]
 
 ## 1. A Mudança de Paradigma: Sair da Janela de Chat
@@ -36,3 +50,8 @@ Para times de tecnologia, adotar uma abordagem **open source e agnóstica a mode
 - **Domínio do fluxo de engenharia:** O conhecimento do time (`AGENTS.md`, skills, validações, automações) vira ativo do repositório, não dependência de um fornecedor.
 
 > **Por isso nosso estudo usa o Pi (`pi.dev`):** um harness open source minimalista e extensível que serve como **raio-x** para entender, peça por peça, como qualquer agente de terminal funciona por dentro.
+
+> [!tip] Dica de Palco — Lembretes do Bloco 1
+> - **Quebra-gelo de abertura:** Comece traduzindo *"harness"* para o público brasileiro (*arreio* de cavalo / *peitoral* de cão) — quem não conhece o termo entende na hora que é "o que canaliza e guia força bruta".
+> - **Justiça histórica:** Cite explicitamente a **Anthropic** e o time do **Claude Code** antes de entrar no viés open source — mostra maturidade técnica e contextualiza de onde veio a disciplina.
+> - **Virada anti-lock-in:** Reforce que o foco aqui são **fundamentos**; modelos mudam rápido, mas o domínio sobre o *harness* fica com o time.

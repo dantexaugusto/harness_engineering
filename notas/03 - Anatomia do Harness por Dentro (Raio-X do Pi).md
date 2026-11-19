@@ -55,3 +55,7 @@ No Pi padrão, não vêm embutidos na força:
 - Integrações pesadas (como MCP ou busca web nativa).
 
 Não porque essas coisas não sejam úteis — **mas porque pertencem à camada de extensibilidade** (nosso próximo bloco), onde cada time acopla apenas o que o terreno exige.
+
+> [!tip] Dica de Palco — Lembretes do Bloco 3
+> - **Por que abrir o capô do Pi?** Destaque o contraste com ferramentas "caixa-preta": no Pi você enxerga **4 ferramentas** (`read`, `write`, `edit`, `bash`) e um *system prompt* **menor que 1.000 tokens**.
+> - **Conexão anti-lock-in:** Aponte para o `pi-ai` como o "suporte universal de motor" — o mesmo harness roda na nuvem ou em modelos locais (`Ollama`, `llama.cpp`) trocando com `/model`.

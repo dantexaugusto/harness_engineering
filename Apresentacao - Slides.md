@@ -9,6 +9,15 @@
 
 ---
 
+## Antes de Tudo: De Onde Vem o Termo "Harness"?
+
+![[origem-termo-harness.jpg]]
+
+- Em inglês, **harness** é o **arreio** (de cavalos) ou **peitoral** (de cães): o equipamento que **conecta, direciona e controla** força bruta para gerar trabalho útil com segurança.
+- Na IA, o **harness** faz exatamente isso com o modelo (LLM): transforma capacidade bruta de texto em **ação confiável sobre o código**.
+
+---
+
 ## Bloco 1 — Do Chat Isolado ao Terminal Aberto
 
 ![[evolucao-chat-ao-terminal.jpg]]
@@ -44,8 +53,7 @@
 
 ![[evolucao-motor-ao-automovel.jpg]]
 
-- **Lenoir (1860) & Otto (1876):** motor **útil, mas estacionário** na oficina $\rightarrow$ *como o **Chat Web** na bancada.*
-- **Daimler, Maybach & Benz (1885–1886):** combustível portátil + **chassi, direção e freios** $\rightarrow$ *o momento **Harness Engineering**.*
+> *"Assim como o motor de Lenoir e Otto já era muito útil preso numa bancada de oficina antes de virar automóvel, o LLM no chat web também já era útil. O que transformou um motor estacionário em um carro foi a engenharia de chassi, carburador, direção e freios ao redor dele — exatamente o papel do **Harness Engineering** para transformar um LLM em um agente de código."*
 
 ---
 
@@ -55,6 +63,15 @@
 
 - **Não precisa de uma Ferrari para ir à padaria:** tarefas simples pedem modelo leve e harness mínimo.
 - **Cidade vs. Trilha Off-Road:** código limpo aceita agilidade; legado crítico exige 4x4, freios e sensores reforçados.
+
+---
+
+## Do Motor à CPU e ao LLM: A Nova Camada Semântica
+
+![[cpu-motor-camada-semantica.jpg]]
+
+- **Motor a Combustão & Chip da CPU:** um processador de transistores sozinho não basta — foi a engenharia ao redor (placa-mãe, memória, SO, compiladores) que criou a era digital.
+- **LLMs na Fase Inicial:** são o novo "motor" de uma **camada semântica** inédita — com um campo imenso para construir **Harness Engineering** ao redor, canalizando e transduzindo essa energia motriz em ação confiável.
 
 ---
 
@@ -80,9 +97,9 @@
 
 ## O Efeito Escher: O Harness que Se Auto-Estende
 
-![[escher-harness-autoextensao.jpg]]
+![[escher_desenhando.webp|380]] ![[escher-harness-autoextensao.jpg|500]]
 
-- **Open Source + `read` / `edit` / `bash`:** o Pi lê o próprio código para **criar suas extensões, skills e corrigir seus próprios bugs**.
+- **Open Source + `read` / `edit` / `bash`:** como as *Mãos Desenhando* de M. C. Escher, o Pi lê o próprio código para **criar suas extensões, skills e corrigir seus próprios bugs**.
 - **Quando liberar vs. travar:** superpoder na hora de evoluir a ferramenta; em produção, exige trava no SO (como veremos no `pi-father-spinner` com `chmod a-w`).
 
 ---

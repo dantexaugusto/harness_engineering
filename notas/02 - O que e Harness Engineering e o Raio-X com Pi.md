@@ -23,7 +23,7 @@ A história real do motor a combustão segue quase exatamente os mesmos três es
 | **Lenoir (1860) & Otto (1876) — Motor *estacionário* preso ao gás encanado:** já tinha utilidade comercial clara em oficinas (prensas gráficas, teares, bombas e tornos), mas não saía do lugar. | **Chat na Web / Bancada:** útil de verdade para gerar trechos e explicar erros, mas **estacionário** — o humano leva o código até o chat e traz a resposta na mão. |
 | **Daimler, Maybach & Benz (1885–1886) — Combustível portátil + chassi, direção e freios:** a engenharia *ao redor do motor* transformou força estacionária em automóvel. | **Agente no Terminal + Harness Engineering:** o LLM sai da bancada fixa, ganha contexto portátil (`AGENTS.md`), transmissão (`read`/`edit`/`bash`), sensores (testes) e freios (guardrails). |
 
-> *"Assim como o motor de Lenoir e Otto já era muito útil preso numa bancada de oficina antes de virar automóvel, o LLM no chat web também já era útil. O que transformou um motor estacionário em um carro foi a engenharia ao redor dele — exatamente o papel do **Harness Engineering**."*
+> *"Assim como o motor de Lenoir e Otto já era muito útil preso numa bancada de oficina antes de virar automóvel, o LLM no chat web também já era útil. O que transformou um motor estacionário em um carro foi a engenharia de chassi, carburador, direção e freios ao redor dele — exatamente o papel do **Harness Engineering** para transformar um LLM em um agente de código."*
 
 ---
 
@@ -50,7 +50,19 @@ A metáfora do carro também explica a **eficiência de recursos** — tanto na 
 
 ---
 
-## 3. Por que o Pi (`pi.dev`) é o "Raio-X" Ideal?
+## 3. Do Motor e da CPU ao LLM: A Nova Camada Semântica
+
+![[cpu-motor-camada-semantica.jpg]]
+
+Essa mesma lógica ajuda a enxergar a **dimensão histórica** do momento em que estamos:
+
+- **1. Era Mecânica (Motor a Combustão):** o motor gerou força motriz mecânica; mas o impacto veio da engenharia ao redor (chassi, transmissão, direção, freios).
+- **2. Era Digital (Chip da CPU):** transistores miniaturizados em um chip de silício não fazem nada sozinhos em cima de uma mesa. Foi a engenharia de hardware e software ao redor (placa-mãe, barramentos, memória RAM, armazenamento, sistema operacional, compiladores e interfaces) que canalizou pulsos elétricos em computadores, redes e aplicativos.
+- **3. Era Semântica (Modelo / LLM — Fase Inicial):** os LLMs são comparáveis a essas tecnologias fundacionais, mas operando em uma **camada semântica nunca antes explorada**. Ainda estamos na fase inicial: há um campo imenso para construir engenharia ao redor capaz de **canalizar e transduzir** essa nova energia motriz semântica em software, automação e trabalho confiável.
+
+---
+
+## 4. Por que o Pi (`pi.dev`) é o "Raio-X" Ideal?
 
 Se ferramentas comerciais fechadas entregam carros já selados de fábrica (onde você nem sempre vê o que há sob o capô e muitas vezes só pode usar o motor do fabricante), o **Pi** (`pi-coding-agent` / `pi-mono`) adota a estratégia oposta:
 
@@ -59,3 +71,8 @@ Se ferramentas comerciais fechadas entregam carros já selados de fábrica (onde
 - **Modularidade explícita:** Recursos avançados (permissões, modos de planejamento, subagentes, integrações) não vêm colados no núcleo; você acopla apenas os equipamentos que o terreno exige.
 
 É justamente essa transparência que nos permite fazer um **raio-x completo** da anatomia de um harness no próximo bloco.
+
+> [!tip] Dica de Palco — Lembretes do Bloco 2
+> - **Frase do motor estacionário:** Conte que o motor a combustão *não nasceu fazendo carro* (Huygens 1680 $\rightarrow$ Lenoir 1860 / Otto 1876 estacionário em oficinas $\rightarrow$ Benz/Daimler 1885–1886). Feche com: *"O que transformou um motor estacionário em um carro foi a engenharia de chassi, carburador, direção e freios ao redor dele — exatamente o papel do **Harness Engineering** para transformar um LLM em um agente de código."*
+> - **Eficiência ("Padaria vs. Off-Road"):** Solte a analogia *"não preciso de uma Ferrari para ir até a padaria da esquina comprar pão"* e *"carro de cidade é diferente de 4x4 para trilha de barro off-road"* para conectar escolha de modelo + tamanho do harness ao objetivo e custo.
+> - **Visão macro (CPU $\rightarrow$ Camada Semântica):** Compare LLMs ao **chip da CPU** (transistores miniaturizados que sozinhos não faziam nada sem placa-mãe, memória, SO e compiladores) — estamos na **fase inicial** de uma **camada semântica** inédita, canalizando e transduzindo energia motriz como nunca antes.
