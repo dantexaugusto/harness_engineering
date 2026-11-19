@@ -17,7 +17,21 @@ Um bom harness não serve só para um humano digitar no terminal. Construído so
 
 ---
 
-## 2. Caso Prático Real: `pi-father-spinner` (Open Source / MIT)
+## 2. Extensões Customizadas e Subagentes Multimodelo: `pi-custom-extensions` (MIT)
+
+Antes de ir para a nuvem, vale ver como o próprio fluxo diário no Pi pode ser expandido em grupos modulares no repositório [`pi-custom-extensions`](file:///home/dante/projects/pi-custom-extensions):
+
+- **`subagentsV1` (Produtividade & Squad Clássico):**
+  - Comandos e ferramentas práticas: `/files`, `/diff`, `/tui`, `web-search.ts`, `tps.ts` (tokens/s), `prompt-url-widget.ts`.
+  - *Prompt Templates* reutilizáveis (`/feature`, `/fullstack`, `/implement-review`, `/review`, `/test`, `/pr`, `/is`, `/cl`, `/wr`), skill [`squad-workflows`](file:///home/dante/projects/pi-custom-extensions/subagentsV1/skills/squad-workflows/SKILL.md) e ferramenta `squad`.
+- **`subagents_OpenRouter_multimodel` & `subagents_Bedrock_multimodel` ("Sem Ferrari na padaria"):**
+  - Orquestração `subagent` disparando processos isolados com **`pi --mode json`** (execução única, paralela ou em cadeia `scout → planner → worker → reviewer`).
+  - **Roteamento de modelo por função:** em OpenRouter, por exemplo, `scout` usa modelo rápido/econômico (`deepseek-chat`), `planner` planeja (`kimi-k2.6`), `worker` implementa (`gpt-5.2-codex`) e `tester`/`reviewer` validam (`gemini-3-flash-preview` / `gemini-2.5-flash`); no grupo Bedrock, `Sonnet` para exploração/planejamento/testes/revisão e `Opus` focado no `worker`.
+  - Inclui ainda `session-persistence.ts`, `subagent-cost-widget.ts` e diagramas arquiteturais em Obsidian Canvas (`agents_arch_diagrams/`).
+
+---
+
+## 3. Caso Prático Real: `pi-father-spinner` (Open Source / MIT)
 
 Para provar que **Harness Engineering** com núcleo minimalista funciona na vida real, vejamos o projeto aberto **`pi-father-spinner`** — um orquestrador persistente e bridge Telegram multi-instância construído diretamente sobre `@earendil-works/pi-coding-agent`, `@mariozechner/pi-agent-core` e `@mariozechner/pi-ai`.
 
@@ -46,7 +60,7 @@ Para provar que **Harness Engineering** com núcleo minimalista funciona na vida
 
 ---
 
-## 3. Checklist *Agent-Ready*: Como Preparar seu Projeto e Time
+## 4. Checklist *Agent-Ready*: Como Preparar seu Projeto e Time
 
 Independentemente da ferramenta usada, projetos onde agentes de IA brilham têm quatro características simples:
 
@@ -57,7 +71,7 @@ Independentemente da ferramenta usada, projetos onde agentes de IA brilham têm 
 
 ---
 
-## 4. Mensagem Final: O Novo Papel do Time
+## 5. Mensagem Final: O Novo Papel do Time
 
 > A IA no terminal não substitui a engenharia — **ela muda o nível de abstração do nosso trabalho.**
 

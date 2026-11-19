@@ -85,6 +85,15 @@
 
 ---
 
+## Mesmo Espírito Aberto: LangChain, LangGraph & `deepagents`
+
+![[langgraph-deepagents-vs-pi.svg]]
+
+- **LangChain (*Framework*) $\rightarrow$ LangGraph (*Runtime em Grafos*) $\rightarrow$ `deepagents` (*Harness Oficial* + CLI `dcode`).**
+- **Pi** brilha pelo *minimalismo radical* (raio-x); **LangGraph + `deepagents`** brilha por já entregar *checkpointing durável, `write_todos` e filesystem virtual* em Python/TS.
+
+---
+
 ## Bloco 4 — Equipando o Carro para o Off-Road
 
 ![[extensibilidade-guardrails-pi.svg]]
@@ -112,6 +121,17 @@
 | **Print / JSON** | Scripts e pipelines de CI/CD (*headless*) |
 | **RPC** | Integração via `stdin`/`stdout` com outras UIs |
 | **SDK (TypeScript)** | Embutir o agente dentro de produtos próprios |
+
+---
+
+## Extensões Customizadas na Prática: `pi-custom-extensions` (MIT)
+
+Repositório multi-grupo de extensões, *skills*, *prompt templates* e subagentes para o Pi:
+
+- **`subagentsV1`:** comandos `/files`, `/diff`, `/tui`, `web-search.ts`, `tps.ts`, templates (`/feature`, `/fullstack`, `/review`, `/test`, `/pr`, `/wr`), skill `squad-workflows` e orquestrador `squad`.
+- **`subagents_OpenRouter_multimodel` & `subagents_Bedrock_multimodel`:** subagentes isolados via **`pi --mode json`** com **roteamento multimodelo por papel** (*"sem Ferrari na padaria"*):
+  - `scout` (exploração rápida) $\rightarrow$ `planner` $\rightarrow$ `worker` (modelo mais forte) $\rightarrow$ `tester` $\rightarrow$ `reviewer`.
+- **Extras avançados:** persistência de sessão (`session-persistence.ts`), widget de custo (`subagent-cost-widget.ts`) e diagramas em **Obsidian Canvas**.
 
 ---
 

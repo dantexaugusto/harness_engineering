@@ -34,27 +34,32 @@ Guia enxuto para consultar em uma segunda tela ou tablet durante a apresentaçã
 
 8. **Por que o Pi e como é por dentro (`arquitetura-pi-harness.svg`):**
    - *Fala-chave:* Escolhemos o **Pi** como raio-x pelo seu **minimalismo radical**: `pi-ai` (troca livre de modelos nuvem/locais com `/model`), `pi-agent-core` (*system prompt* **< 1.000 tokens** + compactação) e apenas **4 ferramentas** (`read`, `write`, `edit`, `bash`).
+9. **Ecossistema aberto irmão — LangChain, LangGraph & `deepagents`:**
+   - *Fala-chave:* Vale citar que o mesmo movimento aberto existe em **LangChain (framework) $\rightarrow$ LangGraph (runtime em grafos com checkpointing e HITL) $\rightarrow$ `deepagents` (harness oficial com `write_todos`, filesystem virtual, subagentes e CLI `dcode`)**. O Pi brilha como raio-x minimalista; o LangGraph/`deepagents` como runtime de grafos e harness "baterias inclusas" em Python/TS.
 
 ---
 
 ## Bloco 4 — Extensibilidade, Efeito Escher e Guardrails
 
-9. **Equipando para o Off-Road (`extensibilidade-guardrails-pi.svg`):**
-   - *Fala-chave:* Quando o projeto exige, acoplamos `AGENTS.md`, *Skills*, extensões TypeScript (`pi.registerTool()`), *hooks* de segurança e testes como sensores objetivos.
-10. **O Efeito Escher (`escher_desenhando.webp` + `escher-harness-autoextensao.jpg`):**
+10. **Equipando para o Off-Road (`extensibilidade-guardrails-pi.svg`):**
+    - *Fala-chave:* Quando o projeto exige, acoplamos `AGENTS.md`, *Skills*, extensões TypeScript (`pi.registerTool()`), *hooks* de segurança e testes como sensores objetivos.
+11. **O Efeito Escher (`escher_desenhando.webp` + `escher-harness-autoextensao.jpg`):**
     - *Fala-chave:* Por ter **código aberto** e operar com `read` / `edit` / `bash`, o Pi lê o próprio código para **criar suas extensões e corrigir seus próprios bugs** — como as mãos de Escher desenhando a si mesmas.
     - *Gancho de tensão:* Mas em produção, você quer um agente alterando a si mesmo sem limite? Isso leva direto ao caso prático.
 
 ---
 
-## Bloco 5 — Caso Prático (`pi-father-spinner`) & Fechamento
+## Bloco 5 — Casos Práticos (`pi-custom-extensions` & `pi-father-spinner`) & Fechamento
 
-11. **Modos do Pi + `pi-father-spinner` (`caso-pratico-pi-father-spinner.svg`):**
+12. **Modos do Pi + `pi-custom-extensions`:**
+    - *Fala-chave:* Mostre os 4 modos (TUI, Print/JSON, RPC, SDK) e conecte direto ao **`pi-custom-extensions`**: um repositório MIT com grupos de extensões (`subagentsV1`, `subagents_OpenRouter_multimodel`, `subagents_Bedrock_multimodel`), templates (`/feature`, `/review`, `/wr`), skill `squad-workflows` e subagentes rodando via **`pi --mode json`**.
+    - *Conexão com "sem Ferrari na padaria":* cada papel usa o modelo certo (`scout` rápido, `planner`, `worker` mais forte, `tester` e `reviewer` enxutos).
+13. **`pi-father-spinner` (`caso-pratico-pi-father-spinner.svg`):**
     - *Fala-chave:* Projeto open source (MIT) construído sobre o Pi para gerenciar vários projetos pelo Telegram: **1 Projeto = 1 Bot = 1 Sessão `tmux` = 1 Contexto Isolado**.
     - *Destaques técnicos que fecham todos os blocos:*
       - `PI_CHILD_AGENT=1` (eficiência: filhos enxutos sem ferramentas de orquestração).
       - Extensões TS (`father-spinner.ts`, `telegram.ts`, `tavily.ts`) + skill `diode-tunneling`.
       - **`chmod a-w` via Ansible no SO** (trava real para o Efeito Escher em runtime!) + `node:sqlite` WAL e recuperação com `pi -c`.
       - Anti-lock-in com Terraform/Ansible e troca de modelos via `pi-ai`.
-12. **Fechamento:**
+14. **Fechamento:**
     - *Fala-chave:* O papel do time sobe de nível: de "digitador de sintaxe" para **arquiteto de contexto, projetista de harness e revisor crítico**.

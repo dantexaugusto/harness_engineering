@@ -29,11 +29,11 @@ O mesmo conteúdo está disponível em dois formatos nativos do Obsidian para ap
 - `notas/` — Notas de apoio aprofundadas (adequadas para times mistos em tecnologia):
   1. [`01 - Do Chat ao Terminal e os Pioneiros.md`](notas/01%20-%20Do%20Chat%20ao%20Terminal%20e%20os%20Pioneiros.md) — Origem do termo *harness* (arreio/peitoral em animais), evolução até a CLI, reconhecimento à **Anthropic & Claude Code** como pioneiros do *Harness Engineering* e por que evitar *vendor lock-in*.
   2. [`02 - O que e Harness Engineering e o Raio-X com Pi.md`](notas/02%20-%20O%20que%20e%20Harness%20Engineering%20e%20o%20Raio-X%20com%20Pi.md) — Equação `Agente = Modelo + Harness`, paralelo histórico do motor estacionário (Lenoir/Otto) ao automóvel (Benz/Daimler), analogia com o chip da CPU na camada semântica, eficiência (*"sem Ferrari na padaria"*, cidade vs. *off-road*) e escolha do Pi.
-  3. [`03 - Anatomia do Harness por Dentro (Raio-X do Pi).md`](notas/03%20-%20Anatomia%20do%20Harness%20por%20Dentro%20%28Raio-X%20do%20Pi%29.md) — Camadas `pi-ai`, `pi-agent-core`, compactação de contexto, *system prompt* `< 1.000 tokens` e as **4 ferramentas núcleo** (`read`, `write`, `edit`, `bash`).
+  3. [`03 - Anatomia do Harness por Dentro (Raio-X do Pi).md`](notas/03%20-%20Anatomia%20do%20Harness%20por%20Dentro%20%28Raio-X%20do%20Pi%29.md) — Camadas `pi-ai`, `pi-agent-core`, compactação de contexto, *system prompt* `< 1.000 tokens`, as **4 ferramentas núcleo** (`read`, `write`, `edit`, `bash`) e paralelo com **LangChain / LangGraph / `deepagents`**.
   4. [`04 - Extensibilidade, Guardrails e Engenharia de Contexto.md`](notas/04%20-%20Extensibilidade%2C%20Guardrails%20e%20Engenharia%20de%20Contexto.md) — `AGENTS.md`, `SYSTEM.md`, *Skills*, extensões TypeScript, *hooks* de segurança, testes como sensores objetivos e o **Efeito Escher** (auto-extensão e auto-correção).
-  5. [`05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time.md`](notas/05%20-%20Caso%20Pratico%20%28pi-father-spinner%29%2C%20Modos%20e%20Papel%20do%20Time.md) — Modos do Pi (TUI, Print/JSON, RPC, SDK), estudo de caso real com `pi-father-spinner`, checklist *agent-ready* e o novo papel do time.
-  6. [`06 - Cola de Palco (Roteiro de Fala).md`](notas/06%20-%20Cola%20de%20Palco%20%28Roteiro%20de%20Fala%29.md) — Roteiro rápido em 12 pontos com todas as analogias, ganchos e lembretes para o apresentador.
-- `imagens/` — **11 recursos visuais** (8 imagens/ilustrações em `.jpg`/`.webp` e 3 diagramas vetoriais em `.svg`):
+  5. [`05 - Caso Pratico (pi-father-spinner), Modos e Papel do Time.md`](notas/05%20-%20Caso%20Pratico%20%28pi-father-spinner%29%2C%20Modos%20e%20Papel%20do%20Time.md) — Modos do Pi (TUI, Print/JSON, RPC, SDK), casos práticos reais (`pi-custom-extensions` e `pi-father-spinner`), checklist *agent-ready* e o novo papel do time.
+  6. [`06 - Cola de Palco (Roteiro de Fala).md`](notas/06%20-%20Cola%20de%20Palco%20%28Roteiro%20de%20Fala%29.md) — Roteiro rápido em 14 pontos com todas as analogias, ganchos e lembretes para o apresentador.
+- `imagens/` — **12 recursos visuais** (8 imagens/ilustrações em `.jpg`/`.webp` e 4 diagramas vetoriais em `.svg`):
   - `origem-termo-harness.jpg`
   - `evolucao-chat-ao-terminal.jpg`
   - `metafora-carro-harness.jpg`
@@ -41,6 +41,7 @@ O mesmo conteúdo está disponível em dois formatos nativos do Obsidian para ap
   - `evolucao-motor-ao-automovel.jpg`
   - `cpu-motor-camada-semantica.jpg`
   - `arquitetura-pi-harness.svg`
+  - `langgraph-deepagents-vs-pi.svg`
   - `extensibilidade-guardrails-pi.svg`
   - `escher_desenhando.webp`
   - `escher-harness-autoextensao.jpg`

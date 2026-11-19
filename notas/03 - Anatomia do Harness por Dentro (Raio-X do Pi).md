@@ -56,6 +56,28 @@ No Pi padrão, não vêm embutidos na força:
 
 Não porque essas coisas não sejam úteis — **mas porque pertencem à camada de extensibilidade** (nosso próximo bloco), onde cada time acopla apenas o que o terreno exige.
 
+---
+
+## 5. Ecossistema Aberto Irmão: LangChain, LangGraph e `deepagents`
+
+![[langgraph-deepagents-vs-pi.svg]]
+
+O Pi não está sozinho nessa filosofia. No ecossistema open source (licença MIT, disponível em **Python** e **JavaScript/TypeScript**), a família **LangChain / LangGraph / `deepagents`** segue o mesmo princípio de independência de fornecedor e controle programático sobre o harness — dividida pelo próprio time em **três camadas**:
+
+1. **LangChain (*Framework*):** abstrações fundamentais, integração com múltiplos modelos, blocos padrão de loop e *middleware*.
+2. **LangGraph (*Runtime*):** motor de execução de baixo nível baseado em grafos com estado (*stateful*), *checkpointing* durável, *streaming* e pausas nativas de *human-in-the-loop* para inspecionar ou aprovar chamadas de ferramenta.
+3. **`deepagents` (*Harness Oficial*):** o harness oficial "baterias inclusas" do time da LangChain construído sobre o LangGraph (com direito ao companheiro de terminal **`dcode`** / Deep Agents Code). Já traz de fábrica:
+   - **Planejamento estruturado (`write_todos`):** força o agente a quebrar tarefas longas em checklist antes de sair editando.
+   - **Filesystem virtual / plugável:** descarrega saídas grandes e arquivos fora da memória curta do prompt.
+   - **Delegação para subagentes:** cria subagentes com janela de contexto limpa e retorna apenas a síntese.
+   - **Compressão de contexto, memória persistente (`/memories/`) e *Skills*.**
+
+| Abordagem Open Source | Ponto Forte | Quando Brilha |
+| :--- | :--- | :--- |
+| **Pi (`pi-mono`)** | **Minimalismo radical:** 4 ferramentas + *system prompt* `< 1.000 tokens`. | Aprender os fundamentos (**raio-x**), manter o controle enxuto e acoplar extensões TS sob medida. |
+| **LangGraph + `deepagents`** | **Runtime em grafos + baterias inclusas:** *checkpointing* durável, `write_todos`, filesystem virtual e Python/TS. | Projetos que querem um runtime de grafos persistentes ou um harness completo já estruturado para tarefas longas. |
+
 > [!tip] Dica de Palco — Lembretes do Bloco 3
 > - **Por que abrir o capô do Pi?** Destaque o contraste com ferramentas "caixa-preta": no Pi você enxerga **4 ferramentas** (`read`, `write`, `edit`, `bash`) e um *system prompt* **menor que 1.000 tokens**.
 > - **Conexão anti-lock-in:** Aponte para o `pi-ai` como o "suporte universal de motor" — o mesmo harness roda na nuvem ou em modelos locais (`Ollama`, `llama.cpp`) trocando com `/model`.
+> - **Amplie a visão open source:** Cite **LangChain / LangGraph** (runtime com estado e *checkpointing*) e o **`deepagents`** (harness oficial deles, com `write_todos`, filesystem virtual e CLI `dcode`) para mostrar que o movimento aberto de *Harness Engineering* tem opções maduras tanto pelo caminho minimalista (Pi) quanto pelo caminho de runtime em grafos (LangGraph).
